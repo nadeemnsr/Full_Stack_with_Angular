@@ -113,4 +113,9 @@ public class ArticleController {
 		return ResponseEntity.status(HttpStatus.OK).body(readFileTiming);
 	}
 
+	@GetMapping(path = "/hello-world")
+	public String get() {
+		return "Hello World ";
+	}
+
 }
